@@ -3,16 +3,54 @@ body {
     font-family: poppins, sans-serif;
 }
 
-img.Logo {
-    height: 80px;
-    width: auto;
+section.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    border: 1px solid red;
+    background: #13213d
 }
 
 nav.navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+img.Logo {
+    max-width: auto;
+    max-height: 100px;
+    border: 1px solid pink;
+}
+
+nav.navbar ul {
+
+    display: inline-flex;
+    gap: 4vw;
+    flex-flow: row wrap;
+    border: 1px solid blue;
+    justify-content: flex-end;
+    width: 85vw;
+}
+
+li.nav-links {
+    list-style: none;
+    font-size: 1 rem;
+}
+
+li.nav-links a {
+    text-decoration: none;
+    color: #fca311;
+    font-weight: 600;
+    color: #fca311;
+
+}
+
+section.section1 {
+    background: url('./imgs/Landing_Page_1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
