@@ -9,20 +9,19 @@ section.navbar {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    border: 1px solid red;
     background: #13213d
 }
 
 nav.navbar {
-    align-items: center;
+    align-content: center;
 
 
 }
 
 img.Logo {
     max-width: auto;
-    max-height: 100px;
-    border: 1px solid pink;
+    max-height: 65px;
+    padding: 5px 20px;
 }
 
 nav.navbar ul {
@@ -30,7 +29,6 @@ nav.navbar ul {
     display: inline-flex;
     gap: 4vw;
     flex-flow: row wrap;
-    border: 1px solid blue;
     justify-content: flex-end;
     width: 85vw;
 }
@@ -44,7 +42,11 @@ li.nav-links a {
     text-decoration: none;
     color: #fca311;
     font-weight: 600;
-    color: #fca311;
+
+}
+
+li.nav-links a:hover {
+    color: #fff;
 
 }
 
@@ -53,14 +55,14 @@ section.section1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
 section.section1 div {
     color: white;
     text-align: left;
-    padding: 15% 10%;
+    padding: 20% 15% 10% 10%;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -83,18 +85,53 @@ section.section1 h2 span {
 section.section2 {
     display: flex;
     flex-flow: column nowrap;
-
+    align-items: center;
+    justify-content: center;
     background: url('./imgs/Landing_Page_2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    margin: 0;
+    padding: 50px 20px 0 0;
 }
 
-section.section2 div {
+section.section2 div:nth-of-type(even) {
     color: white;
+    flex-wrap: wrap;
+    font-size: 1.25em;
+    font-weight: 600;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-    display: block;
-    padd border: 1px solid green;
+    background: #13213d;
+    display: flex;
+    border: 1px solid white;
+    width: 300px;
+    height: 120px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding: 0 50px;
+
+
+}
+
+section.section2 div:nth-of-type(odd) {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background: #13213d;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+
+}
+
+img.section2-icons {
+    max-width: auto;
+    max-height: 40px;
+
+}
 }
