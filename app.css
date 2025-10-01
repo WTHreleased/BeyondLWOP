@@ -115,14 +115,30 @@ section.home-section2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 50px 20px 0 0;
+    padding: 50px 0px 30px 0;
+
 }
 
-section.home-section2 div:nth-of-type(even) {
+
+section.home-section2 div {
     color: white;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #13213d;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+section.home-section2 a {
+    text-decoration: none;
+    color: white;
     font-size: 1.25em;
     font-weight: 600;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -135,22 +151,11 @@ section.home-section2 div:nth-of-type(even) {
     margin-bottom: 40px;
     padding: 0 50px;
 
-
 }
 
-section.home-section2 div:nth-of-type(odd) {
-    color: white;
-    align-items: center;
-    justify-content: center;
-    background: #13213d;
-    display: flex;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-
-
+section.home-section2 a:hover {
+    background: #fca311;
+    color: #13213d;
 }
 
 img.home-section2-icons {
