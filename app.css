@@ -7,9 +7,11 @@ section.navbar {
     position: sticky;
     top: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
     margin: 0;
-    background: #13213d
+    background: #13213d;
+    max-height: 75px;
 }
 
 nav.navbar {
@@ -28,7 +30,6 @@ nav.navbar ul {
 
     display: inline-flex;
     gap: 4vw;
-    flex-flow: row wrap;
     justify-content: flex-end;
     width: 85vw;
 }
@@ -42,47 +43,70 @@ li.nav-links a {
     text-decoration: none;
     color: #fca311;
     font-weight: 600;
-
+    text-wrap: wrap;
+    overflow: hidden;
 }
 
 li.nav-links a:hover {
     color: #fff;
-
 }
 
-section.section1 {
+section.home-section1 {
     background: url('./imgs/Landing_Page_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     height: 100%;
-    margin: 0;
+    min-height: 50vh;
 }
 
-section.section1 div {
+section.home-section1 div {
     color: white;
     text-align: left;
-    padding: 20% 15% 10% 10%;
+    padding-top: 50vh;
+    padding-bottom: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
     text-shadow: 2px 2px 4px #000000;
+    display: flex;
+    flex-flow: column wrap;
 }
 
-section.section1 h1 {
-    font-size: 6rem;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
+section.home-section1 h1 {
+    font-size: 7vw;
+    line-height: 1;
+    margin: 0;
+    padding: 20px 0;
     font-weight: 400;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    white-space: nowrap;
+    text-wrap: balance;
+
+
 }
 
-section.section1 h2 {
-    font-size: 2rem;
+section.home-section1 h2 {
+    font-size: 2.5vw;
+    line-height: 1;
+    margin: 0;
+    padding: 20px 0;
     font-weight: 400;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    white-space: nowrap;
+    text-wrap: pretty;
 }
 
-section.section1 h2 span {
+section.home-section1 h2 span {
     color: #fca311;
 }
 
-section.section2 {
+section.home-section2 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -94,7 +118,7 @@ section.section2 {
     padding: 50px 20px 0 0;
 }
 
-section.section2 div:nth-of-type(even) {
+section.home-section2 div:nth-of-type(even) {
     color: white;
     flex-wrap: wrap;
     font-size: 1.25em;
@@ -104,7 +128,7 @@ section.section2 div:nth-of-type(even) {
     text-align: center;
     background: #13213d;
     display: flex;
-    border: 1px solid white;
+    border: 2px ridge white;
     width: 300px;
     height: 120px;
     box-sizing: border-box;
@@ -114,7 +138,7 @@ section.section2 div:nth-of-type(even) {
 
 }
 
-section.section2 div:nth-of-type(odd) {
+section.home-section2 div:nth-of-type(odd) {
     color: white;
     align-items: center;
     justify-content: center;
@@ -129,9 +153,17 @@ section.section2 div:nth-of-type(odd) {
 
 }
 
-img.section2-icons {
+img.home-section2-icons {
     max-width: auto;
     max-height: 40px;
 
 }
+
+section.home-section3 {
+    background: url('./imgs/Landing_Page_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    min-height: 50vh;
 }
