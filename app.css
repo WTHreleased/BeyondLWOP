@@ -3,7 +3,7 @@ body {
     font-family: poppins, sans-serif;
 }
 
-section.navbar {
+.navbar {
     position: sticky;
     top: 0;
     display: flex;
@@ -11,35 +11,36 @@ section.navbar {
     overflow: hidden;
     margin: 0;
     background: #13213d;
-    max-height: 75px;
+    min-height: 75px;
 }
 
-nav.navbar {
+.navbar {
     align-content: center;
 
 
 }
 
-img.Logo {
-    max-width: auto;
+.Logo {
+    max-width: 65px;
     max-height: 65px;
     padding: 5px 20px;
 }
 
-nav.navbar ul {
+.navbar ul {
 
     display: inline-flex;
-    gap: 4vw;
+    gap: 40px;
+    padding: 10px 0;
     justify-content: flex-end;
     width: 85vw;
 }
 
-li.nav-links {
+.nav-links {
     list-style: none;
     font-size: 1 rem;
 }
 
-li.nav-links a {
+.nav-links a {
     text-decoration: none;
     color: #fca311;
     font-weight: 600;
@@ -47,11 +48,11 @@ li.nav-links a {
     overflow: hidden;
 }
 
-li.nav-links a:hover {
+.nav-links a:hover {
     color: #fff;
 }
 
-section.home-section1 {
+.section1 {
     background: url('./imgs/Landing_Page_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +61,7 @@ section.home-section1 {
     min-height: 50vh;
 }
 
-section.home-section1 div {
+.section1 div {
     color: white;
     text-align: left;
     padding-top: 50vh;
@@ -72,7 +73,7 @@ section.home-section1 div {
     flex-flow: column wrap;
 }
 
-section.home-section1 h1 {
+.section1 h1 {
     font-size: 7vw;
     line-height: 1;
     margin: 0;
@@ -85,10 +86,9 @@ section.home-section1 h1 {
     white-space: nowrap;
     text-wrap: balance;
 
-
 }
 
-section.home-section1 h2 {
+.section1 h2 {
     font-size: 2.5vw;
     line-height: 1;
     margin: 0;
@@ -102,11 +102,11 @@ section.home-section1 h2 {
     text-wrap: pretty;
 }
 
-section.home-section1 h2 span {
+.section1 h2 span {
     color: #fca311;
 }
 
-section.home-section2 {
+.section2 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -120,7 +120,7 @@ section.home-section2 {
 }
 
 
-section.home-section2 div {
+.section2 div {
     color: white;
     align-items: center;
     justify-content: center;
@@ -130,10 +130,10 @@ section.home-section2 div {
     height: 75px;
     border-radius: 50%;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-section.home-section2 a {
+.section2 a {
     text-decoration: none;
     color: white;
     font-size: 1.25em;
@@ -144,27 +144,28 @@ section.home-section2 a {
     text-align: center;
     background: #13213d;
     display: flex;
-    border: 2px ridge white;
+    border: 2px ridge #ffffff;
+    border-radius: 3px;
     width: 300px;
     height: 120px;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding: 0 50px;
 
 }
 
-section.home-section2 a:hover {
+.section2 a:hover {
     background: #fca311;
     color: #13213d;
 }
 
-img.home-section2-icons {
+.section2-icons {
     max-width: auto;
     max-height: 40px;
 
 }
 
-section.home-section3 {
+.section3 {
     background: url('./imgs/Landing_Page_3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,3 +173,125 @@ section.home-section3 {
     height: 100%;
     min-height: 50vh;
 }
+
+.section3 div {
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 60vh;
+    padding-bottom: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-shadow: 2px 2px 4px #000000;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.section3 h1 {
+    font-size: 6vw;
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    white-space: nowrap;
+    text-wrap: balance;
+}
+
+.section3 h2 {
+    font-size: 2vw;
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    white-space: nowrap;
+    text-wrap: pretty;
+}
+
+.learn_more {
+    display: block;
+    text-decoration: none;
+    background: 0;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    margin: 20px 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.section4 {
+    background: url('./imgs/Landing_Page_4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.stats {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 30px 0;
+    margin: 20px 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap: 50px;
+
+
+}
+
+.stat-box {
+    border: 3px solid white;
+    border-radius: 50px 0px;
+    padding: 20px 40px;
+    text-align: center;
+
+}
+
+.learn.more {
+    background: 0;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .navbar li {
+        padding: 10px 20px;
+
+    }
