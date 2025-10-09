@@ -3,7 +3,7 @@ body {
     font-family: poppins, sans-serif;
 }
 
-.navbar {
+section.navbar {
     position: sticky;
     top: 0;
     display: flex;
@@ -12,6 +12,7 @@ body {
     margin: 0;
     background: #13213d;
     min-height: 75px;
+    border-bottom: 2px solid #fca311;
 }
 
 .navbar {
@@ -58,7 +59,7 @@ body {
     background-size: cover;
     background-position: center top;
     height: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
 .section1 div {
@@ -171,7 +172,7 @@ body {
     background-size: cover;
     background-position: center top;
     height: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
 .section3 div {
@@ -235,36 +236,84 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    position: relative;
     height: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     color: white;
     align-items: center;
     justify-content: center;
 
+
 }
+
+.section4 h1 {
+    font-size: clamp(20px, 3vw, 40px);
+    line-height: 1;
+    margin: 0;
+    padding: 30px;
+    font-weight: 400;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    white-space: nowrap;
+    text-wrap: balance;
+}
+
 
 .stats {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px 30px 0;
-    margin: 20px 20px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    gap: 50px;
+    padding: 30px 10px;
+    font-size: clamp(12px, 2vw, 30px);
+    font-weight: 400;
+    gap: 20px;
 
 
 }
 
 .stat-box {
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 50px 0px;
-    padding: 20px 40px;
+    padding: 40px;
     text-align: center;
+    min-height: 350px;
+    text-transform: uppercase;
+    text-wrap: balance;
+    background: rgb(19, 33, 61, 0.7);
+    align-content: center;
+    justify-content: center;
+    flex: 1;
 
+}
+
+.stat-box div:nth-of-type(1) {
+    font-size: clamp(14px, 2.5vw, 40px);
+    padding: 10px;
+    background: white;
+    border-radius: 0px 50px;
+    color: #13213d;
+    font-weight: 500;
+    width: auto;
+    margin: 20;
+
+
+}
+
+.stat-box img {
+    max-width: auto;
+    max-height: 80px;
+    margin: 10px 5px;
+
+}
+
+.stat-box span {
+    color: #fca311;
+    font-weight: 600;
 }
 
 .learn.more {
@@ -280,6 +329,8 @@ body {
     margin: 20px 20px;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .navbar {
         flex-direction: column;
@@ -294,4 +345,14 @@ body {
     .navbar li {
         padding: 10px 20px;
 
+    }
+
+    .stats {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .stat-box {
+        min-height: 250px;
+        padding: 20px;
     }
