@@ -75,10 +75,10 @@ section.navbar {
 }
 
 .section1 h1 {
-    font-size: 7vw;
+    font-size: clamp(20px, 7vw, 100px);
     line-height: 1;
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     font-weight: 400;
     flex-grow: 1;
     flex-shrink: 1;
@@ -90,16 +90,16 @@ section.navbar {
 }
 
 .section1 h2 {
-    font-size: 2.5vw;
+    font-size: clamp(16px, 2.5vw, 80px);
     line-height: 1;
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     font-weight: 400;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
     min-width: 100px;
-    white-space: nowrap;
+    white-space: wrap;
     text-wrap: pretty;
 }
 
@@ -189,7 +189,7 @@ section.navbar {
 }
 
 .section3 h1 {
-    font-size: 6vw;
+    font-size: clamp(30px, 6vw, 100px);
     line-height: 1;
     margin: 0;
     font-weight: 400;
@@ -202,7 +202,7 @@ section.navbar {
 }
 
 .section3 h2 {
-    font-size: 2vw;
+    font-size: clamp(16px, 2vw, 80px);
     line-height: 1;
     margin: 0;
     font-weight: 400;
@@ -233,10 +233,10 @@ section.navbar {
 
 .section4 {
     background: url('./imgs/Landing_Page_4.jpeg');
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    position: relative;
     height: 100%;
     min-height: 100vh;
     display: flex;
@@ -269,7 +269,7 @@ section.navbar {
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
-    font-size: clamp(12px, 2vw, 30px);
+    font-size: clamp(12px, 1.5vw, 30px);
     font-weight: 400;
     gap: 20px;
 
@@ -306,7 +306,7 @@ section.navbar {
 
 .stat-box img {
     max-width: auto;
-    max-height: 80px;
+    max-height: 90px;
     margin: 10px 5px;
 
 }
@@ -316,7 +316,49 @@ section.navbar {
     font-weight: 600;
 }
 
-.learn.more {
+.section5 {
+    background: url(imgs/Landing_Page_5.jpg);
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    color: #fff;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.section5 div {
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0 10vw;
+    padding-top: 50vh;
+
+}
+
+.section5 h1 {
+    font-size: clamp(30px, 6vw, 100px);
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    white-space: nowrap;
+    text-wrap: balance;
+    margin-bottom: 10px;
+}
+
+.section5 h2 {
+    font-size: clamp(16px, 2vw, 80px);
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    white-space: nowrap;
+    text-wrap: balance;
+}
+
+.learn_more {
     background: 0;
     border: 1px solid white;
     border-radius: 50px;
@@ -326,10 +368,14 @@ section.navbar {
     width: 160px;
     height: 50px;
     cursor: pointer;
-    margin: 20px 20px;
+    margin: 20px 0px;
 }
 
-
+.learn_more:hover {
+    background: #fff;
+    color: #13213d;
+    text-shadow: none;
+}
 
 @media screen and (max-width: 1000px) {
     .navbar {
@@ -356,3 +402,28 @@ section.navbar {
         min-height: 250px;
         padding: 20px;
     }
+
+    .section1 {
+        background-position: 65%;
+        background-size: auto;
+    }
+
+    .section5 {
+        background-position: 45%;
+        background-size: auto;
+    }
+
+    .learn_more {
+        background: 0;
+        border: 1px solid white;
+        border-radius: 50px;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+
+}
