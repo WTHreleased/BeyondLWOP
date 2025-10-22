@@ -358,6 +358,61 @@ section.navbar {
     text-wrap: balance;
 }
 
+.section6 {
+    background: #13213d;
+    color: white;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content;
+    padding: 10px 20px;
+    align-items: center;
+
+}
+
+.footer-1 {
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.footer-1 p {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1 rem;
+}
+
+.footer-2 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.footer-2 img {
+    max-height: 100px;
+    width: auto;
+    min-width: 50px;
+    padding: 0 10px;
+}
+
+.footer-3 {
+    text-align: right;
+    text-wrap: nowrap;
+}
+
+.footer-3 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-3 li {
+    text-decoration: none;
+    list-style: none;
+}
+
 .learn_more {
     background: 0;
     border: 1px solid white;
