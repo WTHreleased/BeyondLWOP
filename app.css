@@ -363,11 +363,10 @@ section.navbar {
     color: white;
     font-size: 0.9rem;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content;
     padding: 10px 20px;
     align-items: center;
-
 }
 
 .footer-1 {
@@ -376,15 +375,16 @@ section.navbar {
 }
 
 .footer-1 p {
-    font-size: 0.9rem;
+    font-size: clamp(10px, 2vw, 15px);
     margin: 0;
-    line-height: 1.5;
-    font-size: 1 rem;
+    line-height: 1.25;
+    display: flex;
+    flex: 1;
 }
 
 .footer-2 {
     display: flex;
-    padding: 20px;
+    padding: 0px;
     justify-content: space-around;
     align-items: center;
 }
@@ -392,15 +392,23 @@ section.navbar {
 
 
 .footer-2 img {
-    max-height: 100px;
+    max-height: 50px;
     width: auto;
-    min-width: 50px;
+    min-width: 0;
     padding: 0 10px;
 }
 
+#HRW {
+    max-height: 75px;
+}
+
 .footer-3 {
+    font-size: clamp(10px, 2vw, 15px);
     text-align: right;
     text-wrap: nowrap;
+    margin: 0;
+    line-height: 1.25;
+    color: white;
 }
 
 .footer-3 ul {
@@ -463,6 +471,8 @@ section.navbar {
         background-size: auto;
     }
 
+
+
     .section5 {
         background-position: 45%;
         background-size: auto;
@@ -481,4 +491,48 @@ section.navbar {
         margin: 20px 0px;
     }
 
+
+}
+
+@media screen and (max-width: 600px) {
+    .section6 {
+        background: #13213d;
+        color: white;
+        font-size: 0.9rem;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-1 p {
+        font-size: clamp(9px, 0.5vw, 12px);
+        margin: 0;
+        line-height: 1.25;
+        display: flex;
+        flex: 1;
+    }
+
+    .footer-2 {
+        display: flex;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-2 img {
+        max-height: 25px;
+        width: auto;
+        min-width: 0;
+        padding: 0 10px;
+    }
+
+    #HRW {
+        max-height: 35px;
+    }
+
+    .footer-3 {
+        display: none;
+    }
 }
