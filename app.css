@@ -409,6 +409,8 @@ section.navbar {
     margin: 0;
     line-height: 1.25;
     color: white;
+    font-weight: 600;
+
 }
 
 .footer-3 ul {
@@ -416,9 +418,21 @@ section.navbar {
     margin: 0;
 }
 
-.footer-3 li {
-    text-decoration: none;
+.section6 li {
     list-style: none;
+}
+
+.section6 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-1 a {
+    padding-top: 10px;
+}
+
+.section6 a:hover {
+    color: #fca311;
 }
 
 .learn_more {
